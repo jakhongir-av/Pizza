@@ -1,18 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exam 3</title>
     <style>
+        *,
+        *::before,
+        *::after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
 
+        main {
+            margin: 100px;
+            padding: 50px 100px;
+            color: white;
+            background-color: black;
+        }
+
+        .main__heading {
+            text-align: center;
+            margin-bottom: 50px;
+            font-family: sans-serif;
+        }
+
+        .pizza__menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 20px;
+        }
     </style>
 </head>
+
 <body>
     <main>
-        <h2>Pitsa buyurtma qilish</h2>
-        <form action="" class="">
+        <h2 class="main__heading">Pitsa buyurtma qilish</h2>
+        <form action="" class="pizza__menu">
             <label for="">
                 Noni qanday bo'lsin
                 <select name="select_options" id="">
@@ -21,25 +49,29 @@
                     <option value="">o'rta</option>
                 </select>
             </label>
-            <h3>Kattal</h3>
+            <h3>Kattaligi</h3>
             <div>
-                <label for="small"><input id="small" type="text">
-                    <input type="radio">
-                    25sm
-                </label>
-                <label for="normal"><input id="normal" type="text">
-                    <input type="radio">
-                    30sm
-                </label>
-                <label for="big"><input id="big" type="text">
-                    <input type="radio">
-                    35sm
-                </label>
+                <label for="sizes"><input name="sizes" id="size1" type="radio">25sm</label>
+                <label for="sizes"><input name="sizes" id="size2" type="radio">30sm</label>
+                <label for="sizes"><input name="sizes" id="size3" type="radio">35sm</label>
             </div>
             <h3>Ustiga nima solaylik</h3>
-            <div></div>
+            <div>
+                <label for="car1"><input id="car1" type="checkbox">Pomidor</label>
+                <label for="car2"><input id="car2" type="checkbox">Kurka Go'shti</label>
+                <label for="car3"><input id="car3" type="checkbox">Zaytun</label>
+                <label for="car4"><input id="car4" type="checkbox">Tuzlangan bodring</label>
+                <label for="car5"><input id="car5" type="checkbox">Qo'ziqorin</label>
+                <label for="car6"><input id="car6" type="checkbox">Qazi</label>
+            </div>
+            <h3>Qo'shimchalar</h3>
+            <div>
+                <label for="add1"><input id="add1" name="additionals" type="checkbox">Achiq</label>
+                <label for="add2"><input id="add2" name="additionals" type="checkbox">Sosiskalar</label>
+            </div>
         </form>
     </main>
     <script src="./js/main.js"></script>
 </body>
+
 </html>

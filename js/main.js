@@ -44,10 +44,6 @@ form.addEventListener("submit", (e) => {
             let list2 = document.createElement("li");
             preferences_add_list.appendChild(list2);
             list2.innerHTML = item.value;
-        }else {
-            let list2 = document.createElement("li");
-            preferences_add_list.appendChild(list2);
-            list2.innerHTML = item.value + ":  Qo'shilmaydi";
         }
     }
     console.log(preferences);

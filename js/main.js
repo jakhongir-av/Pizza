@@ -1,4 +1,8 @@
 let preferences = [{Thickness: null, Size: null, smth: [], additionals: [],},];
+let SZ = null;
+let result = null;
+let OPT = null;
+
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -27,5 +31,7 @@ form.addEventListener("submit", (e) => {
         }
     }
     console.log(preferences);
+    console.log(OPT);
 })
+
 

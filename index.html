@@ -40,35 +40,36 @@
 <body>
     <main>
         <h2 class="main__heading">Pitsa buyurtma qilish</h2>
-        <form action="" class="pizza__menu">
-            <label for="">
+        <form action="" class="pizza__menu" id="form">
+            <label for="options">
                 Noni qanday bo'lsin
-                <select name="select_options" id="">
-                    <option value="">yupqa</option>
-                    <option value="">qalin</option>
-                    <option value="">o'rta</option>
+                <select class="select_options" id="options">
+                    <option value="Thin" class="options__items">Yupqa</option>
+                    <option value="Medium" class="options__items">O'rtacha</option>
+                    <option value="Thick" class="options__items">Qalin</option>
                 </select>
             </label>
             <h3>Kattaligi</h3>
             <div>
-                <label for="sizes"><input name="sizes" id="size1" type="radio">25sm</label>
-                <label for="sizes"><input name="sizes" id="size2" type="radio">30sm</label>
-                <label for="sizes"><input name="sizes" id="size3" type="radio">35sm</label>
+                <label name="sizes" for="size1"><input id="size1" type="radio" value="25sm" name="radios">25sm</label>
+                <label name="sizes" for="size2"><input id="size2" type="radio" value="30sm" name="radios">30sm</label>
+                <label name="sizes" for="size3"><input id="size3" type="radio" value="35sm" name="radios">35sm</label>
             </div>
             <h3>Ustiga nima solaylik</h3>
             <div>
-                <label for="car1"><input id="car1" type="checkbox">Pomidor</label>
-                <label for="car2"><input id="car2" type="checkbox">Kurka Go'shti</label>
-                <label for="car3"><input id="car3" type="checkbox">Zaytun</label>
-                <label for="car4"><input id="car4" type="checkbox">Tuzlangan bodring</label>
-                <label for="car5"><input id="car5" type="checkbox">Qo'ziqorin</label>
-                <label for="car6"><input id="car6" type="checkbox">Qazi</label>
+                <label for="car1"><input name="smth" id="car1" value="Pomidor" type="checkbox">Pomidor</label>
+                <label for="car2"><input name="smth" id="car2" value="Kurka Go'shti" type="checkbox">Kurka Go'shti</label>
+                <label for="car3"><input name="smth" id="car3" value="Zaytun" type="checkbox">Zaytun</label>
+                <label for="car4"><input name="smth" id="car4" value="Tuzlangan bodring" type="checkbox">Tuzlangan bodring</label>
+                <label for="car5"><input name="smth" id="car5" value="Qo'ziqorin" type="checkbox">Qo'ziqorin</label>
+                <label for="car6"><input name="smth" id="car6" value="Qzi" type="checkbox">Qazi</label>
             </div>
             <h3>Qo'shimchalar</h3>
             <div>
-                <label for="add1"><input id="add1" name="additionals" type="checkbox">Achiq</label>
-                <label for="add2"><input id="add2" name="additionals" type="checkbox">Sosiskalar</label>
+                <label for="add1"><input name="additionals" id="add1" value="Achiq" type="checkbox">Achiq</label>
+                <label for="add2"><input name="additionals" id="add2" value="Sosiskalar" type="checkbox">Sosiskalar</label>
             </div>
+            <button type="submit">Submit</button>
         </form>
     </main>
     <script src="./js/main.js"></script>

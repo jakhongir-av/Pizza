@@ -13,6 +13,7 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
+            font-family: sans-serif;
         }
 
         main {
@@ -33,6 +34,37 @@
             flex-direction: column;
             justify-content: flex-start;
             gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .smth__wrapper {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .additionals__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .order__wrapper {
+            border: 1px solid #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .prefer-list>li {
+            margin-left: 30px;
+        }
+
+        .prefer-list2>li {
+            margin-left: 30px;
         }
     </style>
 </head>
@@ -44,9 +76,9 @@
             <label for="options">
                 Noni qanday bo'lsin
                 <select class="select_options" id="options">
-                    <option value="Thin" class="options__items">Yupqa</option>
-                    <option value="Medium" class="options__items">O'rtacha</option>
-                    <option value="Thick" class="options__items">Qalin</option>
+                    <option value="Yupqa" class="options__items">Yupqa</option>
+                    <option value="O'rtacha" class="options__items">O'rtacha</option>
+                    <option value="Qalin" class="options__items">Qalin</option>
                 </select>
             </label>
             <h3>Kattaligi</h3>
@@ -56,7 +88,7 @@
                 <label name="sizes" for="size3"><input id="size3" type="radio" value="35sm" name="radios">35sm</label>
             </div>
             <h3>Ustiga nima solaylik</h3>
-            <div>
+            <div class="smth__wrapper">
                 <label for="car1"><input name="smth" id="car1" value="Pomidor" type="checkbox">Pomidor</label>
                 <label for="car2"><input name="smth" id="car2" value="Kurka Go'shti" type="checkbox">Kurka
                     Go'shti</label>
@@ -64,10 +96,10 @@
                 <label for="car4"><input name="smth" id="car4" value="Tuzlangan bodring" type="checkbox">Tuzlangan
                     bodring</label>
                 <label for="car5"><input name="smth" id="car5" value="Qo'ziqorin" type="checkbox">Qo'ziqorin</label>
-                <label for="car6"><input name="smth" id="car6" value="Qzi" type="checkbox">Qazi</label>
+                <label for="car6"><input name="smth" id="car6" value="Qazi" type="checkbox">Qazi</label>
             </div>
             <h3>Qo'shimchalar</h3>
-            <div>
+            <div class="additionals__wrapper">
                 <label for="add1"><input name="additionals" id="add1" value="Achiq" type="checkbox">Achiq</label>
                 <label for="add2"><input name="additionals" id="add2" value="Sosiskalar"
                         type="checkbox">Sosiskalar</label>
@@ -75,13 +107,13 @@
             <button type="submit">Submit</button>
         </form>
         <h3>Buyurtmalar:</h3>
-        <div id="preferences">
+        <div id="preferences" class="order__wrapper">
             <h4>Non: <span id="preferences__bread"></span></h4>
             <h4>Kattaligi: <span id="preferences__size"></span></h4>
             <h4>Ustida:</h4>
-            <ul id="preferences__list"></ul>
+            <ul class="prefer-list" id="preferences__list"></ul>
             <h4>Qo'shimchalar:</h4>
-            <ul id="preferences_add__list"></ul>
+            <ul class="prefer-list2" id="preferences_add__list"></ul>
         </div>
     </main>
     <script src="./js/main.js"></script>
